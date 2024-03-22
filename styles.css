@@ -26,7 +26,7 @@ body {
     background-image: url('ment.png');
     background-size:160%;
     margin-top: -1%;
-    background-position: calc(55% - 77px) center; /* Slide the background image 30px to the right */
+    background-position: calc(85% - 77px) center; /* Slide the background image 30px to the right */
     background-repeat: no-repeat;
     flex: 1;
     overflow: hidden;
@@ -145,20 +145,21 @@ body {
 
 
 /* Adjust styles for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .container {
         flex-direction: column;
     }
 
     .background-image {
         height: 50vh;
+        background-size: cover;
         
     }
 
     .content {
         max-width: 100%;
         padding: 20px;
-        height:-500;
+        height:auto;
     }
 
     
@@ -171,3 +172,23 @@ body {
 
 
 
+
+
+/* Adjust styles for smaller screens */
+@media (min-width: 768px) {
+    .logo-mobile {
+        display: none; /* Hide the logo on larger screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .logo-mobile {
+        display: block; /* Display the logo on smaller screens */
+        max-width: 70%; /* Adjust the maximum width of the logo for smaller screens */
+        margin: 0 auto 30px; /* Add margin to center the logo vertically and provide space below it */
+    }
+
+    .headline {
+        margin-top: -30px; /* Add margin to create space between the logo and the headline */
+    }
+}
