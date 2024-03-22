@@ -1,0 +1,173 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Google Font Roboto */
+    /* background-color: #222; */ /* Remove the background color */
+    color: #fff; /* White text color */
+}
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.background-image {
+    background-image: url('ment.png');
+    background-size:160%;
+    margin-top: -1%;
+    background-position: calc(55% - 77px) center; /* Slide the background image 30px to the right */
+    background-repeat: no-repeat;
+    flex: 1;
+    overflow: hidden;
+    position: relative; /* Position relative for absolute positioning */
+}
+
+
+.content {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    color: gold;
+    max-width: 30%; /* Adjusted max-width for the content */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background color */
+}
+
+.headline, .subtext, .subheadline {
+    text-align: center;
+}
+
+.headline {
+    color: black;
+    font-weight: bold;
+}
+
+.subheadline, .course-info h2{
+    color: #000; /* Black text color */
+    font-weight: bold;
+}
+
+
+
+.registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.registration-form input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Add border */
+}
+
+.registration-form button {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffbf00;
+    color: black;
+    cursor: pointer;
+    animation: shine 2s infinite;
+}
+
+.registration-form input::placeholder {
+    font-weight: bold; /* Make the placeholder text bold */
+}
+
+
+.registration-form input[type="text"] {
+    font-weight: bold; /* Make the text entered by the user bold */
+}
+
+
+
+@keyframes shine {
+    0% {
+        background-color: #007bff;
+    }
+    50% {
+        background-color: #0056b3;
+    }
+    100% {
+        background-color: #007bff;
+    }
+}
+
+.registration-form button:hover {
+    background-color: #ffd700;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: gold;
+    margin-top: 10px;
+    position: relative;
+}
+
+.line::before, .line::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: inherit;
+    filter: blur(10px);
+}
+
+.line::before {
+    left: 0;
+}
+
+.line::after {
+    right: 0;
+}
+
+
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .background-image {
+        height: 50vh;
+        
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 20px;
+        height:-500;
+    }
+
+    
+
+    
+}
+
+
+
+
+
+

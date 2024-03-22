@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/ment.png'); /* Replace 'background_image.jpg' with the path to your image */
+            background-size: cover;
+            background-position: right center;
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 80%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
+            opacity: 0; /* Initially hide the container */
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .instagram-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffffff; /* Instagram brand color */
+            color: #000000;
+            font-size: 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .instagram-button:hover {
+            background-color: gold; /* Darker shade for hover effect */
+        }
+        .instagram-logo {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                max-width: 70%;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+
+            body {
+                background-image: url('/logoMentoria.png');
+                background-size:120%;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-top: -80px;
+            }
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Parabéns <br> A sua inscrição foi concluída!</h1>
+        <p>Aguarde a análise e caso seja aprovada(o) a nossa equipa entrará em contacto ok?
+            Enquanto isso clica no botão abaixo e aproveite o nosso conteúdo gratuito no Instagram. 
+             </p>
+        <a href="https://www.instagram.com/academiasaudedesucesso/" target="_blank" class="instagram-button">
+            <img src="/icons8-instagram-48.png" alt="Instagram Logo" class="instagram-logo">
+            Siga-nos no Instagram
+        </a>
+    </div>
+</body>
+</html>

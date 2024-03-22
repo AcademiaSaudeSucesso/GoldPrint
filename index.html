@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS file -->
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CSS -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="background-image">
+            <!-- Your background image here -->
+        </div>
+        <div class="content">
+            <h1 class="headline">Como Impulsionar Vendas e Dominar o Up-Selling na sua prática clínica de Medicina Estética.</h1>
+            <p class="subtext">
+                <i class="fas fa-video"></i> Ao vivo pelo Zoom | 
+                <i class="far fa-calendar-alt"></i> Segunda-feira 15/04 | 
+                <i class="far fa-clock"></i> Das 20 às 22 (Lisboa)
+            </p>
+            <p class="subheadline">Uma Masterclass exclusiva para Médicos Empreendedores que procuram aumentar as vendas dos seus serviços de Medicina Estética e Cosmética. São apenas 50 vagas e terá de ser selecionada(o) para participar.</p>
+            <form class="registration-form" id="registration-form">
+                <input type="text" id="name" name="name" placeholder="Nome" required>
+                <input type="text" id="whatsapp" name="whatsapp" placeholder="Whatsapp com DDD" required>
+                <button type="submit">Fazer Inscrição Gratuitamente</button>
+            </form>
+            <div class="line"></div>
+            
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Falta pouco... <br> Preencha o formulário para concluir a inscrição:</h2>
+
+
+
+            <form id="popup-registration-form" class="popup-registration-form" action="#" name="contact-us">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">Whatsapp:</label>
+                    <input type="text" id="whatsapp" name="whatsapp" placeholder="Digite o seu whatsapp com DDD" required>
+                </div>
+                <div class="form-group">
+                    <label for="instagram">Instagram:</label>
+                    <input type="text" id="instagram" name="instagram" placeholder="Digite o @ do seu instagram professional">
+                </div>
+                <div class="form-group">
+                    <label for="cedula">Cédula OM:</label>
+                    <input type="text" id="cedula" name="cedula" placeholder="Digite a sua Cédula OM">
+                </div>
+                <div class="form-group">
+                    <label for="momento_profissional">Com que momento profissional mais se identifica:</label>
+                    <select id="momento_profissional" name="momento_profissional" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Recém formado na Medicina Estética">Recém formado na Medicina Estética</option>
+                        <option value="2 ou mais anos de experiência na área, atendo em gabinete">2 ou mais anos de experiência na área, atendo em gabinete</option>
+                        <option value="2 ou mais anos de experiência na área, atendo em clínica de outrem">2 ou mais anos de experiência na área, atendo em clínica de outrem</option>
+                        <option value="2 ou mais anos de experiência na área, tenho a minha clínica">2 ou mais anos de experiência na área, tenho a minha clínica</option>
+                        <option value="5 ou mais anos de experiência na área, tenho clinica e uma equipa">5 ou mais anos de experiência na área, tenho clinica e uma equipa</option>
+                    </select>
+                </div>
+                <!-- Question 2 -->
+                <div class="form-group">
+                    <label for="faturamento_mensal">Faturamento Mensal:</label>
+                    <select id="faturamento_mensal" name="faturamento_mensal" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Abaixo de 1000€">Abaixo de 1000€</option>
+                        <option value="Entre 1000€ e 5000€">Entre 1000€ e 5000€</option>
+                        <option value="Entre 5000€ e 10.000€">Entre 5000€ e 10.000€</option>
+                        <option value="Entre 10.000€ e 15.000€">Entre 10.000€ e 15.000€</option>
+                        <option value="Mais de 15.000€">Mais de 15.000€</option>
+                    </select>
+                </div>
+                <!-- Question 3 -->
+                <div class="form-group">
+                    <label for="pacientes">Já tem pacientes:</label>
+                    <select id="pacientes" name="pacientes" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Ainda não tenho pacientes, atendo familiares e amigos">Ainda não tenho pacientes, atendo familiares e amigos</option>
+                        <option value="Mais de 5 pacientes que fizeram 2 ou mais tratamentos">Mais de 5 pacientes que fizeram 2 ou mais tratamentos</option>
+                        <option value="Mais de 10 pacientes que fizeram 2 ou mais tratamentos">Mais de 10 pacientes que fizeram 2 ou mais tratamentos</option>
+                        <option value="Mais de 20 pacientes que fizeram 4 ou mais tratamentos">Mais de 20 pacientes que fizeram 4 ou mais tratamentos</option>
+                        <option value="Tenho uma base de dados considerável com vários pacientes.">Tenho uma base de dados considerável com vários pacientes.</option>
+                    </select>
+                </div>
+                <!-- Question 4 -->
+                <div class="form-group">
+                    <label for="formacoes">Quais as formações para médicos empreendedores que já fez:</label>
+                    <input type="text" id="formacoes" name="formacoes" placeholder="Digite aqui" required>
+                </div>
+                <!-- Question 5 -->
+                <div class="form-group">
+                    <label>Estarias disposta a investir 300€ por mês em anúncios de Instagram ou Google para fazer crescer o teu negócio?</label>
+                    <div class="radio-buttons">
+                        <input type="radio" id="investir_sim" name="investir" value="SIM" required>
+                        <label for="investir_sim">SIM</label>
+                        <input type="radio" id="investir_nao" name="investir" value="NÃO">
+                        <label for="investir_nao">NÃO</label>
+                    </div>
+                </div>
+                <button type="submit" class="popup-submit-button">Confirmar sua Inscrição</button>
+            </form>
+            
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

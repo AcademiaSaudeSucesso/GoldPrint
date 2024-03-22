@@ -1,0 +1,238 @@
+/* Add your custom styles here */
+        /* Modal styles */
+        .modal {
+            display: none; /* Hide the modal by default */
+            position: fixed; /* Position the modal fixed to the viewport */
+            top: -10%;
+            left: 0;
+            width: 100%; /* Set the width to fill the viewport */
+            height: 100%; /* Set the height to fill the viewport */
+            z-index: 1000; /* Set a high z-index to ensure the modal appears on top of other content */
+        }
+        
+        .modal-content {
+            background-image: url('ment.png'); /* Set the background image */
+            background-size: cover; /* Cover the entire modal content */
+            background-position: center; /* Center the background image */
+            width: 80%; /* Set the width of the modal content */
+            max-width: 600px; /* Set the maximum width of the modal content */
+            height: 80%; /* Set the height of the modal content */
+            max-height: 600px; /* Set the maximum height of the modal content */
+            margin: 10% auto; /* Center the modal vertically and horizontally */
+            padding: 20px; /* Add padding to the modal content */
+            border-radius: 10px; /* Add border radius */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+            overflow-y: auto; /* Enable vertical scrolling */
+            z-index: 1001; /* Ensure the modal content appears on top of the background overlay */
+            border: 2px solid gold; /* Set initial border color */
+            animation: shining-border 2s infinite; /* Apply the animation */
+        }
+
+        .blur-background {
+            filter: blur(7px); /* Apply blur effect to background */
+        }
+
+
+
+        
+        h2 {
+            color: black;
+            font-weight: bold;
+        }
+        
+
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ffbf00;
+            color: black;
+            cursor: pointer;
+        }
+
+
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid gold;
+            background-color: white; /* Ensure consistent background color */
+            color: black; /* Set text color */
+            font-size: 16px; /* Set font size */
+             /* Set font weight */
+            cursor: pointer;
+        }
+
+
+        
+
+        .popup-registration-form .form-group {
+            margin: 1px; /* Reduce margin between form groups */
+        }
+
+        .popup-registration-form input {
+            width: calc(100% - 20px); /* Reduce input width by adjusting padding */
+            padding: 8px; /* Reduce padding */
+            border: 1px solid gold; /* Set border color to gold */
+            border-radius: 5px; /* Add border radius */
+        }
+
+        .popup-registration-form label {
+            color: black; /* Set the text color to black for the labels */
+            margin-right: 20px; /* Add margin to separate labels */
+        }
+        
+        .popup-registration-form input[type="radio"] {
+            color: black; /* Set the text color to black for the radio buttons */
+            margin-right: 2px; /* Add margin to separate radio buttons */
+        }
+        
+
+        .popup-registration-form .radio-buttons {
+            display: flex; /* Use flexbox to align items */
+            align-items: center; /* Align items vertically */
+        }
+        
+        
+
+
+        .popup-submit-button {
+            width: 100%; /* Set button width to 100% */
+            padding: 10px; /* Add padding */
+            border-radius: 20px; /* Add border radius */
+            border: none;
+            background-color: #ffbf00; /* Set background color */
+            color: #000; /* Set text color */
+            font-size: 16px; /* Set font size */
+            font-weight: bold; /* Set font weight */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Add transition for smooth color change */
+        }
+        
+        .popup-submit-button:hover {
+            background-color: #ffd700; /* Change background color on hover */
+            transform: scale(1.0); /* Add scale animation on hover */
+        }
+
+
+        .popup-registration-form .form-group {
+            margin-bottom: 5px; /* Reduce margin between form fields */
+        }
+        
+        .popup-registration-form input[type="text"],
+        .popup-registration-form input[type="email"] {
+            width: calc(100% - 10px); /* Reduce input width by adjusting padding */
+            padding: 5px; /* Reduce padding */
+
+        }
+
+        .popup {
+            /* Other styles */
+            top: 1%; /* Center the popup vertically */
+            left: 5%; /* Center the popup horizontally */
+            transform: translate(-50%, -50%); /* Center the popup precisely */
+        }
+
+
+        
+
+
+
+
+
+
+
+
+
+        /* Media query for smaller screens */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 80%; /* Set width to 80% of the viewport */
+        max-width: 400px; /* Set max-width for smaller screens */
+        margin: 10% auto; /* Center the modal vertically and horizontally */
+        padding: 20px; /* Add padding */
+        border: 2px solid gold; /* Set initial border color for smaller screens */
+        animation: shining-border 2s infinite; /* Apply the animation on smaller screens */
+    }
+
+    .modal-content h2 {
+        font-size: 18px; /* Decrease font size for smaller screens */
+    }
+
+    .popup-registration-form .form-group {
+        margin-bottom: 10px; /* Add spacing between form fields */
+    }
+
+    .popup-registration-form input {
+        width: calc(100% - 20px); /* Adjust input width */
+    }
+
+    .popup-registration-form button {
+        width: 100%; /* Set button width to 100% */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .modal {
+        top: -1%; /* Adjust the top position for smaller screens */
+    }
+}
+
+
+/* Define the animation */
+@keyframes shining-border {
+    0% { border-color: gold; }
+    50% { border-color: #ffbf00; }
+    100% { border-color: gold; }
+}
+
+/* Apply the animation to the border */
+.popup-registration-form input,
+.popup-registration-form select {
+    border: 1px solid gold; /* Set initial border color */
+    animation: shining-border 5s infinite; /* Apply the animation */
+}
+
+
+/* Apply blur effect to container for smaller screens */
+@media (max-width: 768px) {
+    .blur-background {
+        filter: blur(6px); /* Apply blur effect */
+    }
+}
+
+
+
+
+
+
+
+
