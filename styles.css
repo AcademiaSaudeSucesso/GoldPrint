@@ -165,8 +165,17 @@ body {
     
 
     
+
+    
 }
 
+
+@media (max-width: 767px) {
+    .headline {
+        margin-top: -30px; /* Add margin to create space between the logo and the headline */
+        font-size: 1.4rem; /* Adjust font size for mobile devices */
+    }
+}
 
 
 
