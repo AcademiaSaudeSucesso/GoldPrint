@@ -69,12 +69,26 @@
             }
 
             body {
-                background-image: url('/GoldPrint/logoMentoria.png');
-                background-size:120%;
+                background-image: url('/logoMentoria.png');
+                background-size:cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-top: -80px;
+                height: 100vh; /* Set the height of the body to 100% of the viewport height */
+                overflow-x: hidden; /* Hide horizontal overflow */
+            }
+        }
+
+
+        @media (max-width: 1500px) {
+            body {
+                background-image: url('/Mentoria.png');
+                background-size:95%;
                 background-position: center;
                 background-repeat: no-repeat;
                 margin-top: -80px;
             }
+
         }
 
         /* Animation Keyframes */
@@ -95,7 +109,7 @@
             Enquanto isso clica no botão abaixo e aproveite o nosso conteúdo gratuito no Instagram. 
              </p>
         <a href="https://www.instagram.com/academiasaudedesucesso/" target="_blank" class="instagram-button">
-            <img src="/GoldPrint/icons8-instagram-48.png" alt="Instagram Logo" class="instagram-logo">
+            <img src="/icons8-instagram-48.png" alt="Instagram Logo" class="instagram-logo">
             Siga-nos no Instagram
         </a>
     </div>
