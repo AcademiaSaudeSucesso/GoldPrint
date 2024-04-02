@@ -48,3 +48,14 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message));
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("subscribe-btn").addEventListener("click", function() {
+        window.location.href = "popup.css"; // Change "other_page.html" to the desired URL
+    });
+});
+
+
