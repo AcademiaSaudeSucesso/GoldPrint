@@ -144,8 +144,8 @@ body {
 
 
 
-/* Adjust styles for smaller screens */
-@media (max-width: 1100px) {
+/* Adjust styles for smaller screens  1100default*/
+@media (max-width: 1400px) {
     .container {
         flex-direction: column;
     }
@@ -160,14 +160,19 @@ body {
         max-width: 100%;
         padding: 20px;
         height:auto;
+    } 
+   
+}
+
+@media (min-width: 800px) {
+    .content {
+        max-width: 100%;
+        padding: 80px;
     }
 
-    
-
-    
-
-    
 }
+
+
 
 
 @media (max-width: 767px) {
@@ -185,15 +190,22 @@ body {
     }
 }
 
+h4 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Apply the Roboto font */
+    font-weight: bold; /* Optionally adjust font weight */
+}
 
 
 
 
 
-/* Adjust styles for smaller screens */
-@media (min-width: 768px) {
+
+/* Adjust styles for smaller screens default 768px*/
+@media (min-width: 1768px) {
     .logo-mobile {
         display: none; /* Hide the logo on larger screens */
+        
     }
 }
 
@@ -207,6 +219,88 @@ body {
     .headline {
         margin-top: -30px; /* Add margin to create space between the logo and the headline */
     }
+
+}
+
+
+@media (min-width: 375px) {
+    .picture-text {
+        text-align: justify; /* Align text to both left and right edges */
+        max-width: 90%; /* Limit the maximum width of the text */
+        margin: 0 auto; /* Center the text horizontally */
+        padding: 20px; /* Add padding for better readability */
+        background-color: rgba(255, 255, 255, 0.9); /* Add a light background color */
+        border-radius: 10px; /* Add rounded corners for a softer appearance */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+        margin-top: -40px; /* Adjust top margin */
+        margin-bottom: -150px; /* Adjust bottom margin */
+        margin-left: 20px; /* Reset left margin */
+        margin-right: auto; /* Reset right margin */
+    }
+
+    
+}
+
+
+
+
+
+
+
+@media (min-width: 800px) and (max-width: 1380px){
+    .logo-mobile {
+        max-width: 45%;
+        margin-left: 320px;
+        margin-top: -80px;
+        text-align: center;
+    }
+
+    .fab {
+        margin-bottom: 100px;
+        margin-top: 10px;
+    }
+
+    .need-a-hand {
+        margin-bottom: 100px;
+        margin-top: -70px;
+    }
+
+    .picture {
+        width: 100%; /* Adjust the width as needed */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    max-width: 800px; /* Limit the maximum width to 800px */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 50px auto -150px auto; /* Adjust the margins to position the image */
+    }
+
+    .picture-text {
+        text-align: justify; /* Align text to both left and right edges */
+        max-width: 600px; /* Limit the maximum width of the text */
+        margin: 0 auto; /* Center the text horizontally */
+        padding: 20px; /* Add padding for better readability */
+        background-color: rgba(255, 255, 255, 0.9); /* Add a light background color */
+        border-radius: 10px; /* Add rounded corners for a softer appearance */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+        margin-left: calc(50% - 300px); /* Adjust left margin for centering */
+        margin-right: calc(50% - 300px); /* Adjust right margin for centering */
+        margin-top: -40px; /* Adjust top margin */
+        margin-bottom: -150px; /* Adjust bottom margin */
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      .subtext {
+        animation: blink 4s infinite; /* Adjust animation duration and iteration count as needed */
+      }
+      
+    
+    
+
+    
 }
 
 
@@ -271,7 +365,7 @@ body {
 
     .picture-text {
         position: absolute;
-        bottom: 0;
+        bottom: 5;
         left: 0;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
@@ -281,3 +375,134 @@ body {
         text-align: center;
     }
 }
+
+
+
+
+/* Add this CSS at the end or in your existing CSS file */
+
+/* Add this CSS to your existing CSS or in a separate file */
+.contact-info {
+    position: relative;
+    text-align: center;
+    margin-top: -60px; /* Adjust margin as needed */
+    font-weight: bold;
+    color: #000;
+}
+
+.need-a-hand {
+    position: absolute;
+    top: -50px; /* Adjust vertical position */
+    left: 0;
+    right: 0;
+    font-weight: bold;
+}
+
+/*
+.email {
+    font-weight: bold;
+    font-size: 18px; 
+    
+}
+*/
+
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+   
+}
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #bc2a8d; /* Instagram color */
+    
+}
+
+.social-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.social-icon i {
+    transition: color 0.3s ease; /* Smooth transition on color change */
+}
+
+.social-icon:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+}
+
+.social-icon:before {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-icon:hover:before {
+    color: #007bff;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .social-icon {
+        font-size: 20px;
+        
+    }
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 576px) {
+    .social-icon {
+        font-size: 18px;
+    }
+}
+
+/* Copyright notice */
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666; /* Adjust color */
+}
+
+.copyright a {
+    color: #007bff; /* Adjust link color */
+}
+
+
+
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .subtext {
+    animation: blink 4s infinite; /* Adjust animation duration and iteration count as needed */
+  }
+  
+
+
+
+
+/* Add this CSS to your existing CSS or in a separate file 
+.subscribe-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#subscribe-btn {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#subscribe-btn:hover {
+    background-color: #0056b3; 
+}
+*/
