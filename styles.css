@@ -20,6 +20,7 @@ body {
     max-width: 1350px;
     margin: 0 auto;
     box-sizing: border-box;
+    
 }
 
 .background-image {
@@ -47,6 +48,15 @@ body {
 .headline, .subtext, .subheadline {
     text-align: center;
 }
+
+.subtext {
+    border: 2px solid gold; /* Add a border with a gold color */
+    padding: 10px; /* Add padding to create space between text and border */
+    border-radius: 10px; /* Add rounded corners for a softer appearance */
+    display: inline-block; /* Ensure the border wraps around the text */
+    
+}
+
 
 .headline {
     color: black;
@@ -170,7 +180,13 @@ body {
         padding: 80px;
     }
 
+    .subtext {
+        margin-left: 300px;
+    }
+
 }
+
+
 
 
 
@@ -190,11 +206,41 @@ body {
     }
 }
 
-h4 {
+h5 {
     text-align: center;
     font-family: 'Roboto', sans-serif; /* Apply the Roboto font */
     font-weight: bold; /* Optionally adjust font weight */
 }
+
+h5 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Apply the Roboto font */
+    font-weight: bold; /* Optionally adjust font weight */
+    position: relative; /* Position relative for absolute positioning of line */
+    margin-bottom: 20px; /* Add margin to create space between text and line */
+}
+
+h5::after {
+    content: ''; /* Add content for pseudo-element */
+    display: block; /* Make it a block-level element */
+    height: 2px; /* Set the height of the line */
+    background-color: gold; /* Set the color of the line */
+    position: absolute; /* Position absolutely relative to the h4 element */
+    bottom: -10px; /* Position the line below the h4 text */
+    left: 0; /* Position the line at the beginning of the container */
+    width: calc(120% - 40px); /* Set the width to extend from the beginning to the end of the container's corner */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -232,11 +278,45 @@ h4 {
         background-color: rgba(255, 255, 255, 0.9); /* Add a light background color */
         border-radius: 10px; /* Add rounded corners for a softer appearance */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-        margin-top: -40px; /* Adjust top margin */
+        margin-top: 0; /* Adjust top margin */
         margin-bottom: -150px; /* Adjust bottom margin */
-        margin-left: 20px; /* Reset left margin */
+        margin-left: 85px; /* Reset left margin */
         margin-right: auto; /* Reset right margin */
     }
+
+    .fab {
+        margin-left: 130px;
+        margin-bottom: 20px;
+    }
+
+    .picture {
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+
+
+
+    h5::after {
+        content: ''; /* Add content for pseudo-element */
+        display: block; /* Make it a block-level element */
+        height: 2px; /* Set the height of the line */
+        background-color: gold; /* Set the color of the line */
+        position: absolute; /* Position absolutely relative to the h4 element */
+        bottom: -10px; /* Position the line below the h4 text */
+        left: 0; /* Position the line at the beginning of the container */
+        width: calc(120% - 40px); /* Set the width to extend from the beginning to the end of the container's corner */
+    }
+
+    .video {
+        max-width: 100%; /* Ensure the videos don't exceed the width of their container */
+        margin-bottom: 20px; /* Add some spacing between videos */
+    }
+    
+    .video video {
+        width: 100%; /* Make the video fill its container */
+        height: auto; /* Ensure the video maintains its aspect ratio */
+    }
+    
 
     
 }
@@ -270,7 +350,7 @@ h4 {
     height: auto; /* Ensure the aspect ratio is maintained */
     max-width: 800px; /* Limit the maximum width to 800px */
     display: block; /* Ensure the image behaves as a block element */
-    margin: 50px auto -150px auto; /* Adjust the margins to position the image */
+    margin: 50px auto -150px 180px; /* Adjust the margins to position the image */
     }
 
     .picture-text {
@@ -296,12 +376,24 @@ h4 {
       .subtext {
         animation: blink 4s infinite; /* Adjust animation duration and iteration count as needed */
       }
-      
-    
-    
 
     
 }
+
+
+
+@media (min-width: 1024px) {
+    .video video {
+        width: 350px;
+        height: 250px;
+        margin-left: 300px;
+        margin-top: 20px;
+    }
+}
+
+
+
+
 
 
 
@@ -320,10 +412,14 @@ h4 {
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+        width: 100%;
     }
 
+
+
     .video {
-        width: 90%;
+        width:30%;
+        padding: none;
         margin-bottom: 20px;
         border: 2px solid gold;
         border-radius: 10px;
@@ -335,6 +431,8 @@ h4 {
         border: none;
         width: 100%;
     }
+
+    
 
     .video-overlay {
         position: absolute;
@@ -348,9 +446,20 @@ h4 {
         text-align: center;
     }
 
+
+
+    
+
     .video-text {
         color: #000;
         text-align: center;
+        background-color: #f2f2f2; /* Set background color */
+        padding: 5px; /* Add padding to create space between text and background */
+        border-radius: 10px; /* Add rounded corners for a professional look */
+        margin-bottom: 20px; /* Add margin to create space between the text and the next element */
+        margin-left: 5px;
+        margin-right: 5px;
+        
     }
 
     .picture-container {
@@ -361,12 +470,13 @@ h4 {
 
     .picture {
         width: 100%;
+        
     }
 
     .picture-text {
         position: absolute;
         bottom: 5;
-        left: 0;
+        left: -90px;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
         padding: 10px;
@@ -375,6 +485,30 @@ h4 {
         text-align: center;
     }
 }
+
+/*the two videos to be in column and fit and with the proper width on mobile devises*/
+@media (min-width: 168px) {
+    .video {
+        width: 80%;
+        
+    }
+
+    .picture-container {
+        margin-left: 90px;
+        
+        
+        
+    }
+
+    .picture-container {
+        left: -10px;
+    }
+
+    .need-a-hand {
+        margin-left: 70px;
+    }
+}
+
 
 
 
@@ -385,17 +519,20 @@ h4 {
 .contact-info {
     position: relative;
     text-align: center;
-    margin-top: -60px; /* Adjust margin as needed */
+    margin-top: -20px; /* Adjust margin as needed */
+    margin-bottom: 100px;
+    margin-left: -50px;
     font-weight: bold;
     color: #000;
 }
 
 .need-a-hand {
     position: absolute;
-    top: -50px; /* Adjust vertical position */
+    top: -70px; /* Adjust vertical position */
     left: 0;
     right: 0;
     font-weight: bold;
+    
 }
 
 /*
@@ -410,6 +547,7 @@ h4 {
 .social-media {
     text-align: center;
     margin-top: 20px;
+    margin-left: -200px;
    
 }
 
@@ -478,7 +616,7 @@ h4 {
   }
   
   .subtext {
-    animation: blink 4s infinite; /* Adjust animation duration and iteration count as needed */
+    animation: blink 6s infinite; /* Adjust animation duration and iteration count as needed */
   }
   
 
