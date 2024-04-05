@@ -49,12 +49,32 @@ body {
     text-align: center;
 }
 
+/* Change color of Font Awesome icons to black */
+.subtext i {
+    color: black;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Add a slight shadow */
+    transform: translateZ(5px); /* Apply a Z-axis translation */
+}
+
+
 .subtext {
-    border: 2px solid gold; /* Add a border with a gold color */
+    border: 4px solid rgb(255, 230, 0); /* Add a border with a gold color */
     padding: 10px; /* Add padding to create space between text and border */
     border-radius: 10px; /* Add rounded corners for a softer appearance */
     display: inline-block; /* Ensure the border wraps around the text */
-    
+    animation: flashBorder 2s infinite alternate; /* Apply the animation */  
+}
+
+@keyframes flashBorder {
+    0% {
+        border-color: transparent; /* Set border color to transparent at the beginning */
+    }
+    50% {
+        border-color: rgb(200, 255, 0); /* Set border color to blue halfway through the animation */
+    }
+    100% {
+        border-color: transparent; /* Set border color back to transparent at the end */
+    }
 }
 
 
@@ -491,6 +511,7 @@ h5::after {
     .video {
         width: 80%;
         
+        
     }
 
     .picture-container {
@@ -506,6 +527,12 @@ h5::after {
 
     .need-a-hand {
         margin-left: 70px;
+    }
+
+
+    .video video {
+        height: 190px;
+        
     }
 }
 
