@@ -11,7 +11,7 @@
         }
         
         .modal-content {
-            background-image: url('ment.png'); /* Set the background image */
+            background-image: url('/GoldPrint/ment.png'); /* Set the background image */
             background-size: cover; /* Cover the entire modal content */
             background-position: center; /* Center the background image */
             width: 80%; /* Set the width of the modal content */
@@ -123,23 +123,38 @@
         
 
 
-        .popup-submit-button {
-            width: 100%; /* Set button width to 100% */
-            padding: 10px; /* Add padding */
-            border-radius: 20px; /* Add border radius */
-            border: none;
-            background-color: #ffbf00; /* Set background color */
-            color: #000; /* Set text color */
-            font-size: 16px; /* Set font size */
-            font-weight: bold; /* Set font weight */
-            cursor: pointer;
-            transition: background-color 0.3s ease; /* Add transition for smooth color change */
-        }
-        
-        .popup-submit-button:hover {
-            background-color: #ffd700; /* Change background color on hover */
-            transform: scale(1.0); /* Add scale animation on hover */
-        }
+        /* Apply styles to the "Confirma sua Inscrição" button */
+.popup-submit-button {
+    width: 100%; /* Set button width to 100% */
+    padding: 10px; /* Add padding */
+    border-radius: 20px; /* Add border radius */
+    border: none;
+    background-color: #007bff; /* Set background color to blue */
+    color: #fff; /* Set text color to white */
+    font-size: 16px; /* Set font size */
+    font-weight: bold; /* Set font weight */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+/* Apply shining effect on hover */
+.popup-submit-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    animation: shine 1s infinite; /* Apply the shine animation */
+}
+
+/* Define the shine animation */
+@keyframes shine {
+    0% { background-color: #0056b3; }
+    50% { background-color: #007bff; }
+    100% { background-color: #0056b3; }
+}
+
+/* Apply shining effect continuously */
+.popup-submit-button {
+    animation: shine 1s infinite; /* Apply the shine animation continuously */
+}
+
 
 
         .popup-registration-form .form-group {
@@ -160,6 +175,9 @@
             transform: translate(-50%, -50%); /* Center the popup precisely */
         }
 
+
+
+        
 
         
 
