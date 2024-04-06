@@ -24,7 +24,7 @@ body {
 }
 
 .background-image {
-    background-image: url('ment.png');
+    background-image: url('/GoldPrint/ment.png');
     background-size:160%;
     margin-top: -1%;
     background-position: calc(85% - 77px) center; /* Slide the background image 30px to the right */
@@ -87,6 +87,8 @@ body {
     color: #000; /* Black text color */
     font-weight: bold;
 }
+
+
 
 
 
@@ -272,6 +274,7 @@ h5::after {
     .logo-mobile {
         display: none; /* Hide the logo on larger screens */
         
+        
     }
 }
 
@@ -280,6 +283,7 @@ h5::after {
         display: block; /* Display the logo on smaller screens */
         max-width: 70%; /* Adjust the maximum width of the logo for smaller screens */
         margin: 0 auto 30px; /* Add margin to center the logo vertically and provide space below it */
+        
     }
 
     .headline {
@@ -330,11 +334,13 @@ h5::after {
     .video {
         max-width: 100%; /* Ensure the videos don't exceed the width of their container */
         margin-bottom: 20px; /* Add some spacing between videos */
+        
     }
     
     .video video {
         width: 100%; /* Make the video fill its container */
         height: auto; /* Ensure the video maintains its aspect ratio */
+        
     }
     
 
@@ -433,6 +439,7 @@ h5::after {
         align-items: center;
         margin-top: 20px;
         width: 100%;
+        
     }
 
 
@@ -441,7 +448,7 @@ h5::after {
         width:30%;
         padding: none;
         margin-bottom: 20px;
-        border: 2px solid gold;
+        border: 4px solid gold;
         border-radius: 10px;
         overflow: hidden;
         position: relative; /* Adding position relative for absolute positioning of overlay */
@@ -534,6 +541,15 @@ h5::after {
         height: 190px;
         
     }
+}
+
+
+.highlighted {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow effect */
+    background-color: gold; /* Add background color */
+    color: black; /* Set text color */
+    padding: 2px; /* Add padding for better visibility */
+    border-radius: 3px; /* Add border radius for rounded corners */
 }
 
 
@@ -671,3 +687,38 @@ h5::after {
     background-color: #0056b3; 
 }
 */
+
+
+
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-text {
+    font-size: 18px;
+    color: black;
+}
+
+
+
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px; /* Increase the font size for a larger cross */
+    cursor: pointer;
+    color: #333; /* Color of the cross */
+    z-index: 9999;
+    transition: transform 0.3s ease; /* Add animation for smoother transition */
+}
+
+.close:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+
+
