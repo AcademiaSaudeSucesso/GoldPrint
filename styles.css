@@ -740,9 +740,11 @@ h5::after {
 
 .gold-background {
     background-color: gold; /* Set gold background color */
-    padding: 5px; /* Add some padding for better appearance */
+    padding: 0; /* Add some padding for better appearance */
     border-radius: 60px;
     border: 3px solid black;
+    
+    
 }
 
 
@@ -784,17 +786,25 @@ h5::after {
 
 .close-popup {
     position: absolute;
-    top: 10px;
-    right: 2px;
+    top: 6px;
+    right: 30px;
     font-size: 46px !important;
     cursor: pointer;
-    color: #333; /* Color of the cross */
-    z-index: 9999; /* Ensure the close button appears above other elements */
-    transition: transform 0.3s ease; /* Add animation for smoother transition */
-    border-radius: 60%; /* Faz com que o fechamento tenha bordas arredondadas, criando um círculo */
-    padding: 2px; /* Adiciona um pouco de espaço dentro do círculo */
-    height: 30px;
+    color: black; /* Cor do ícone */
+    z-index: 9999; /* Garante que o botão de fechar apareça acima dos outros elementos */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    border: 5px solid black; /* Adiciona uma borda preta ao redor do ícone */
+    border-radius: 50%; /* Define a forma do elemento como um círculo */
+    width: 60px; /* Largura e altura iguais para criar um círculo */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: gold; /* Cor de fundo do círculo */
+}
+
+.close-popup:hover {
+    transform: scale(1.2); /* Aumenta o tamanho do círculo quando o mouse passa por cima */
 }
 
 .volume-message {
@@ -922,6 +932,31 @@ h5::after {
         
         
     }
+
+    
+    .close-popup {
+        position: absolute;
+        top: 2px;
+        right: 1px;
+        font-size: 46px !important;
+        cursor: pointer;
+        color: black; /* Cor do ícone */
+        z-index: 9999; /* Garante que o botão de fechar apareça acima dos outros elementos */
+        transition: transform 0.3s ease; /* Adiciona uma transição suave */
+        border: 5px solid black; /* Adiciona uma borda preta ao redor do ícone */
+        border-radius: 50%; /* Define a forma do elemento como um círculo */
+        width: 60px; /* Largura e altura iguais para criar um círculo */
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: gold; /* Cor de fundo do círculo */
+    }
+    
+    .close-popup:hover {
+        transform: scale(1.2); /* Aumenta o tamanho do círculo quando o mouse passa por cima */
+    }
+    
 
     
 
