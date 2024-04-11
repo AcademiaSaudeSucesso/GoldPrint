@@ -59,3 +59,45 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the video pop-up element
+    var videoPopup = document.getElementById("videoPopup");
+
+    // Get the close button for the pop-up
+    var closeButton = document.querySelector(".close-popup");
+
+    // Show the pop-up when the page loads
+    videoPopup.style.display = "block";
+
+    // Close the pop-up when the close button is clicked
+    closeButton.addEventListener("click", function() {
+        videoPopup.style.display = "none";
+    });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var volumeMessage = document.querySelector('.volume-message');
+
+    // Show the volume message when the popup opens
+    volumeMessage.style.display = 'block';
+
+    // Hide the volume message after 3 seconds
+    setTimeout(function() {
+        volumeMessage.style.display = 'none';
+    }, 5000);
+});
+
+
+
+
+
+
+
+
