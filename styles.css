@@ -741,7 +741,8 @@ h5::after {
 .gold-background {
     background-color: gold; /* Set gold background color */
     padding: 5px; /* Add some padding for better appearance */
-    border-radius: 50px;
+    border-radius: 60px;
+    border: 3px solid black;
 }
 
 
