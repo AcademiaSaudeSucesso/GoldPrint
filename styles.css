@@ -786,17 +786,17 @@ h5::after {
 
 .close-popup {
     position: absolute;
-    top: 6px;
-    right: 30px;
-    font-size: 46px !important;
+    top: 8px;
+    right: 45px;
+    font-size: 36px !important;
     cursor: pointer;
     color: black; /* Cor do ícone */
     z-index: 9999; /* Garante que o botão de fechar apareça acima dos outros elementos */
     transition: transform 0.3s ease; /* Adiciona uma transição suave */
     border: 5px solid black; /* Adiciona uma borda preta ao redor do ícone */
     border-radius: 50%; /* Define a forma do elemento como um círculo */
-    width: 60px; /* Largura e altura iguais para criar um círculo */
-    height: 60px;
+    width: 30px; /* Largura e altura iguais para criar um círculo */
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -936,8 +936,8 @@ h5::after {
     
     .close-popup {
         position: absolute;
-        top: 2px;
-        right: 1px;
+        top: 4px;
+        right: 5px;
         font-size: 46px !important;
         cursor: pointer;
         color: black; /* Cor do ícone */
@@ -945,8 +945,8 @@ h5::after {
         transition: transform 0.3s ease; /* Adiciona uma transição suave */
         border: 5px solid black; /* Adiciona uma borda preta ao redor do ícone */
         border-radius: 50%; /* Define a forma do elemento como um círculo */
-        width: 60px; /* Largura e altura iguais para criar um círculo */
-        height: 60px;
+        width: 30px; /* Largura e altura iguais para criar um círculo */
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
