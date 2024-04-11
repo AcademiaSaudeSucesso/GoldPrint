@@ -554,7 +554,7 @@ h5::after {
         height: 190px;
         border-radius: 50px;
         width: 100%;
-        margin-left: 1px;
+        margin-left: px;
         
     }
 }
@@ -730,6 +730,7 @@ h5::after {
     color: #333; /* Color of the cross */
     z-index: 9999;
     transition: transform 0.3s ease; /* Add animation for smoother transition */
+    
 }
 
 .close:hover {
@@ -789,6 +790,10 @@ h5::after {
     color: #333; /* Color of the cross */
     z-index: 9999; /* Ensure the close button appears above other elements */
     transition: transform 0.3s ease; /* Add animation for smoother transition */
+    border-radius: 60%; /* Faz com que o fechamento tenha bordas arredondadas, criando um círculo */
+    padding: 2px; /* Adiciona um pouco de espaço dentro do círculo */
+    height: 30px;
+    background-color: gold; /* Cor de fundo do círculo */
 }
 
 .volume-message {
@@ -812,13 +817,20 @@ h5::after {
     height: 350px; /* Ensure the video maintains its aspect ratio */
     margin-left: 200px;
     margin-left: -5px;
-    border-radius: 20px; /* Adiciona curvatura aos cantos do vídeo */
+    margin-top: -2.5%;
+    border-radius: 25px; /* Adiciona curvatura aos cantos do vídeo */
     border: 1px solid gold;
 }
 
 .video-popup {
-    height: 400px;
+    height: 370px;
     
+    
+}
+
+.video video {
+    margin-left: 0%;
+    margin-top: 0%;
 }
 
 
