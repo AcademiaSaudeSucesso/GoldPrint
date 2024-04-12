@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Hide the volume message after 3 seconds
     setTimeout(function() {
         volumeMessage.style.display = 'none';
-    }, 5000);
+    }, 3000);
 });
 
 
@@ -101,3 +101,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
+
+// Get the country code select element
+var countryCodeSelect = document.getElementById('country-code');
+
+// Get the phone number input element
+var phoneNumberInput = document.getElementById('phone-number');
+
+// Add event listener to the country code select element
+countryCodeSelect.addEventListener('change', function() {
+    // Get the selected country code
+    var selectedCountryCode = countryCodeSelect.value;
+    
+    // Set the phone number input placeholder to include the selected country code
+    phoneNumberInput.placeholder = "Digite o seu whatsapp (ex: " + selectedCountryCode + " XXXXXXXXX)";
+});
