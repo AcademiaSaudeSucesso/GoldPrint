@@ -986,8 +986,8 @@ h5::after {
       .headline {
         margin-top:10px; /* Add margin to create space between the logo and the headline */
         font-size: 1.8rem; /* Adjust font size for mobile devices */
-        background-color: gold;
-        display: inline-block;
+        background-color: white;
+        display:-moz-popup;
         border-radius: 10px;
         margin-bottom: 20px;
         
