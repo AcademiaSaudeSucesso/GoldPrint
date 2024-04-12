@@ -24,7 +24,7 @@ body {
 }
 
 .background-image {
-    background-image: url('/GoldPrint/ment.png');
+    background-image: url(/GoldPrint'ment.png');
     background-size:160%;
     margin-top: -1%;
     background-position: calc(85% - 77px) center; /* Slide the background image 30px to the right */
@@ -228,6 +228,11 @@ body {
     .headline {
         margin-top: 20px; /* Add margin to create space between the logo and the headline */
         font-size: 1.4rem; /* Adjust font size for mobile devices */
+        background-color: gold;
+        padding: -10px;
+        display: inline-flexbox;
+        border-radius: 10px;
+        
     }
 }
 
@@ -783,6 +788,9 @@ h5::after {
     background-image: url('/GoldPrint/logoMentoria.png');
     background-size: cover; /* Ensure the background image covers the entire space */
     background-position: center; /* Center the background image */
+    border: none; /* Removed border */
+    border-radius: 0; /* Removed border radius */
+    overflow: hidden; /* Hide any overflow to ensure only the video is displayed */
 }
 
 .close-popup {
@@ -832,10 +840,14 @@ h5::after {
     margin-top: -2.5%;
     border-radius: 25px; /* Adiciona curvatura aos cantos do vídeo */
     border: 1px solid gold;
+    
 }
 
 .video-popup {
     height: 370px;
+    width: 100%; /* Set the video width to 100% for smaller screens */
+    height: 61%; /* Ensure the video maintains its aspect ratio */
+    
     
     
 }
@@ -843,6 +855,9 @@ h5::after {
 .video video {
     margin-left: 0%;
     margin-top: 0%;
+   
+    
+    
 }
 
 
@@ -874,6 +889,9 @@ h5::after {
         width: 90%; /*Set a fixed width */
         height: auto; /* Adjusted height to auto */
         border-radius: 30px;
+        border: none; /* Removed border */
+    border-radius: 0; /* Removed border radius */
+    overflow: hidden; /* Hide any overflow to ensure only the video is displayed */
         
     }
     
@@ -964,6 +982,21 @@ h5::after {
         
         
       }
+
+      .headline {
+        margin-top:10px; /* Add margin to create space between the logo and the headline */
+        font-size: 1.8rem; /* Adjust font size for mobile devices */
+        background-color: gold;
+        display: inline-block;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+    .logo-mobile {
+        max-width:130%;
+        margin-left: -50px;
+    }
     
     
     
