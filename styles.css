@@ -443,6 +443,7 @@ h5::after {
         margin-top: 20px;
         color: rgb(7, 7, 7);
         font-weight: bold;
+        font-size: 20px;
     }
 
     .video-container {
@@ -945,8 +946,8 @@ h5::after {
         transition: transform 0.3s ease; /* Adiciona uma transição suave */
         border: 5px solid black; /* Adiciona uma borda preta ao redor do ícone */
         border-radius: 50%; /* Define a forma do elemento como um círculo */
-        width: 30px; /* Largura e altura iguais para criar um círculo */
-        height: 30px;
+        width: 25px; /* Largura e altura iguais para criar um círculo */
+        height: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -956,11 +957,70 @@ h5::after {
     .close-popup:hover {
         transform: scale(1.2); /* Aumenta o tamanho do círculo quando o mouse passa por cima */
     }
+
+
+    #country-code {
+        max-width: 97%;
+        
+        
+      }
+    
+    
     
 
-    
+}
 
-    
+
+
+
+/* Style for the flags */
+.flag {
+    width: 20px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Add spacing between flag and country name */
+  }
+
+
+  #country-code {
+    width: 95%;
+  }
+
+
+
+
+
+
+
+.dropdown select {
+    width: 95%; /* Garante que o menu suspenso ocupe toda a largura do input */
+    padding: 8px; /* Adiciona algum preenchimento para melhor aparência */
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor do menu suspenso */
+    border-radius: 9px; /* Adiciona cantos arredondados */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+
+.dropdown select:focus {
+    outline: none; /* Remove o contorno azul padrão quando o menu suspenso é selecionado */
+}
+
+.registration-form input[type="text"],
+.registration-form button {
+    width: calc(100% - 20px); /* Define a largura dos inputs e botão */
+    margin-bottom: 10px; /* Adiciona algum espaço entre os inputs e o botão */
+}
+
+.registration-form button {
+    padding: 8px; /* Adiciona algum preenchimento ao botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona cantos arredondados ao botão */
+    background-color: gold; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+}
+
+.registration-form button:hover {
+    background-color: gold; /* Muda a cor de fundo do botão quando o mouse passa por cima */
 }
 
 
@@ -968,4 +1028,12 @@ h5::after {
 
 
 
-  
+.important-time {
+    font-size: 1.1em; /* Adjust font size as needed */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Apply a text shadow */
+    color: #ffffff; /* Text color */
+    background-color: #000000; /* Background color */
+    padding: 5px; /* Add padding for better visibility */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
