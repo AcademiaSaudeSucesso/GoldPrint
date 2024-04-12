@@ -20,7 +20,7 @@
         <span class="close-popup">&times;</span>
         <div class="popup-video-container"> <!-- Add popup-video-container class -->
             <video class="popup-video" controls autoplay muted>
-                <source src="/GoldPrint/new.video.mov" type="video/mp4">
+                <source src="/new.video.mov" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
@@ -40,7 +40,7 @@
             <!-- Your background image here -->
         </div>
         <div class="content">
-            <img src="/GoldPrint/logoMentoria.png" alt="Logo" class="logo-mobile">
+            <img src="/logoMentoria.png" alt="Logo" class="logo-mobile">
             
 
 
@@ -56,7 +56,7 @@
             <form class="registration-form" id="registration-form">
                 <input type="text" id="name" name="name" placeholder="Nome" required>
                 <div class="dropdown">
-                    <select id="country-code" name="whatsapp1" required>
+                    <select id="country-code" name="country-code" required>
                         <option value="">Selecione o país</option>
                         <option value="+351"><img class="flag" src="flag_portugal.png" alt="Portugal Flag">Portugal (+351)</option>
                         <option value="+1"><img class="flag" src="flag_usa.png" alt="USA Flag">Estados Unidos (+1)</option>
@@ -82,7 +82,7 @@
                         <!-- Add more options for other countries as needed -->
                     </select>
                 </div>
-                <input type="text" id="phone-number" name="whatsapp" placeholder="Whatsapp" required>
+                <input type="text" id="phone-number" name="phone-number" placeholder="Whatsapp" required>
                 <button type="submit">Fazer Inscrição Gratuitamente</button>
             </form>
             
@@ -106,8 +106,8 @@
 
 <div class="video-container">
     <div class="video">
-        <video controls playsinline width="320" height="180" poster="/GoldPrint/Captura de Ecrã (61).png">
-            <source src="/GoldPrint/document_5796442855719310748.mp4" type="video/mp4">
+        <video controls playsinline width="320" height="180" poster="/Captura de Ecrã (61).png">
+            <source src="/document_5796442855719310748.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         
@@ -117,8 +117,8 @@
 
      
     <div class="video">
-        <video controls playsinline width="320" height="180" poster="/GoldPrint/Captura de Ecrã (62).png">
-            <source src="/GoldPrint/IMG_4122.MOV" type="video/mp4" div class="vid">
+        <video controls playsinline width="320" height="180" poster="/Captura de Ecrã (62).png">
+            <source src="/IMG_4122.MOV" type="video/mp4" div class="vid">
             Your browser does not support the video tag.
         </video>
         
@@ -128,8 +128,8 @@
 
     <!-- Novo vídeo -->
     <div class="video">
-        <video controls playsinline width="320" height="180" poster="/GoldPrint/drvera.png">
-            <source src="/GoldPrint/drverafeedback.mov" type="video/mp4">
+        <video controls playsinline width="320" height="180" poster="/drvera.png">
+            <source src="/drverafeedback.mov" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         
@@ -142,7 +142,7 @@
 
      
     <div class="picture-container">
-        <img src="/GoldPrint/drwilsa.png" alt="Picture" class="picture">
+        <img src="/drwilsa.png" alt="Picture" class="picture">
         <!--<div class="social-media">
             <a href="https://www.instagram.com/academiasaudedesucesso/" class="social-icon"><i class="fab fa-instagram"></i></a>
             
@@ -187,8 +187,35 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
                 </div>
+                
                 <div class="form-group">
                     <label for="whatsapp">Whatsapp:</label>
+                    <div class="whatsapp-input">
+                        <select id="country-code" name="whatsapp" required>
+                            <option value="">Selecione o país</option>
+                            <option value="+351">Portugal (+351)</option>
+                            <option value="+1">Estados Unidos (+1)</option>
+                            <option value="+44"><img class="flag" src="flag_uk.png" alt="UK Flag">Reino Unido (+44)</option>
+                        <option value="+55"><img class="flag" src="flag_brazil.png" alt="Brazil Flag">Brasil (+55)</option>
+                        <option value="+86"><img class="flag" src="flag_china.png" alt="China Flag">China (+86)</option>
+                        <option value="+91"><img class="flag" src="flag_india.png" alt="India Flag">Índia (+91)</option>
+                        <option value="+81"><img class="flag" src="flag_japan.png" alt="Japan Flag">Japão (+81)</option>
+                        <option value="+82"><img class="flag" src="flag_south_korea.png" alt="South Korea Flag">Coreia do Sul (+82)</option>
+                        <option value="+49"><img class="flag" src="flag_germany.png" alt="Germany Flag">Alemanha (+49)</option>
+                        <option value="+33"><img class="flag" src="flag_france.png" alt="France Flag">França (+33)</option>
+                        <option value="+39"><img class="flag" src="flag_italy.png" alt="Italy Flag">Itália (+39)</option>
+                        <option value="+34"><img class="flag" src="flag_spain.png" alt="Spain Flag">Espanha (+34)</option>
+                        <option value="+7"><img class="flag" src="flag_russia.png" alt="Russia Flag">Rússia (+7)</option>
+                        <option value="+61"><img class="flag" src="flag_australia.png" alt="Australia Flag">Austrália (+61)</option>
+                        <option value="+971"><img class="flag" src="flag_uae.png" alt="UAE Flag">Emirados Árabes Unidos (+971)</option>
+                        <option value="+966"><img class="flag" src="flag_saudi_arabia.png" alt="Saudi Arabia Flag">Arábia Saudita (+966)</option>
+                        <option value="+20"><img class="flag" src="flag_egypt.png" alt="Egypt Flag">Egito (+20)</option>
+                        <option value="+92"><img class="flag" src="flag_pakistan.png" alt="Pakistan Flag">Paquistão (+92)</option>
+                        <option value="+234"><img class="flag" src="flag_nigeria.png" alt="Nigeria Flag">Nigéria (+234)</option>
+                        <option value="+62"><img class="flag" src="flag_indonesia.png" alt="Indonesia Flag">Indonésia (+62)</option>
+                        <option value="+84"><img class="flag" src="flag_vietnam.png" alt="Vietnam Flag">Vietnã (+84)</option>
+                            <!-- Add more country code options here -->
+                        </select>
                         <input type="text" id="phone-number" name="whatsapp" placeholder="Digite o seu whatsapp" required>
                     </div>
                 </div>
