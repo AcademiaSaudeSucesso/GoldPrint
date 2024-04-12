@@ -293,7 +293,7 @@ h5::after {
 @media (max-width: 767px) {
     .logo-mobile {
         display: block; /* Display the logo on smaller screens */
-        max-width: 70%; /* Adjust the maximum width of the logo for smaller screens */
+        max-width: 100%; /* Adjust the maximum width of the logo for smaller screens */
         margin: 0 auto 30px; /* Add margin to center the logo vertically and provide space below it */
         
     }
