@@ -14,6 +14,8 @@ body {
 
 
 
+
+
 .container {
     display: flex;
     width: 100%;
@@ -24,7 +26,7 @@ body {
 }
 
 .background-image {
-    background-image: url(/GoldPrint'ment.png');
+    background-image: url('/GoldPrint/ment.png');
     background-size:160%;
     margin-top: -1%;
     background-position: calc(85% - 77px) center; /* Slide the background image 30px to the right */
@@ -48,6 +50,7 @@ body {
 
 .headline, .subtext, .subheadline {
     text-align: center;
+    
 }
 
 /* Change color of Font Awesome icons to black */
@@ -82,6 +85,9 @@ body {
 .headline {
     color: black;
     font-weight: bold;
+    
+    
+    
 }
 
 .subheadline, .course-info h2{
@@ -94,10 +100,12 @@ body {
 
 
 
+
 .registration-form {
     max-width: 400px;
     margin: 0 auto;
     margin-bottom: 20px;
+    
     
 }
 
@@ -108,7 +116,11 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     border-radius: 10px;
-    border: 1px solid #ccc; /* Add border */
+    border: 1px solid gold; /* Add border */
+}
+
+#country-code {
+    border: 1px solid gold; /* Add border */
 }
 
 .registration-form button {
@@ -178,6 +190,12 @@ body {
 }
 
 
+.video-text {
+    background: linear-gradient(to right, #ffd700, #808080, #ffd700);;
+}
+
+
+
 
 /* Adjust styles for smaller screens  1100default*/
 @media (max-width: 1400px) {
@@ -233,6 +251,7 @@ body {
         display: inline-flexbox;
         border-radius: 10px;
         
+        
     }
 }
 
@@ -275,6 +294,23 @@ h5::after {
         border: none; /* Remove border */
         border-radius: 0; /* Remove border radius */
     }
+
+    
+
+    .headline {
+        background: linear-gradient(to right, #ffd700, #808080, #ffd700); /* Set text color as gradient */
+    }
+
+    .subtext {
+        background: linear-gradient(to right, #ffd700, #808080, #ffd700); /* Set text color as gradient */
+        
+    }
+
+    .important-time {
+        background: linear-gradient(to right, #ffd700, #808080, #ffd700); /* Set text color as gradient */
+    }
+
+    
 }
 
 
@@ -289,9 +325,13 @@ h5::after {
 /* Adjust styles for smaller screens default 768px*/
 @media (min-width: 1768px) {
     .logo-mobile {
-        display: none; /* Hide the logo on larger screens */
+        display:flex; /* Hide the logo on larger screens */
         
         
+    }
+
+    .subtext {
+        margin-left: 20px;
     }
 }
 
@@ -352,13 +392,17 @@ h5::after {
         max-width: 100%; /* Ensure the videos don't exceed the width of their container */
         margin-bottom: 20px; /* Add some spacing between videos */
         
+        
     }
     
     .video video {
         width: 100%; /* Make the video fill its container */
         height: auto; /* Ensure the video maintains its aspect ratio */
         
+        
     }
+
+    
     
 
     
@@ -432,6 +476,10 @@ h5::after {
         margin-left: 300px;
         margin-top: 20px;
     }
+
+    .subtext {
+        margin-left: 150px;
+    }
 }
 
 
@@ -471,6 +519,13 @@ h5::after {
         overflow: hidden;
         position: relative; /* Adding position relative for absolute positioning of overlay */
     }
+
+    
+      
+
+
+
+    
 
     .video iframe {
         border: none;
@@ -644,12 +699,26 @@ h5::after {
     color: #007bff;
 }
 
+
+
+
 /* Adjust styles for smaller screens */
 @media (max-width: 768px) {
     .social-icon {
         font-size: 20px;
         
     }
+}
+
+.subtext {
+    background: linear-gradient(to right, #ffd700, #808080, #ffd700); /* Set text color as gradient */
+    font-size: 20px;
+    
+}
+
+.important-time {
+    background: linear-gradient(to right, #ffd700, #808080, #ffd700); /* Set text color as gradient */
+    
 }
 
 /* Adjust styles for smaller screens */
@@ -992,7 +1061,7 @@ h5::after {
         margin-bottom: 20px;
         font-size: 2.5em; /* Increase font size */
   font-weight: bold; /* Make the text bold */
-  color: linear-gradient(to right, #ffd700, #808080, #000000); /* Set text color as gradient */
+  color: linear-gradient(to right, #ffd700, #808080, #ffd700); /* Set text color as gradient */
   text-align: center; /* Center align the text */
   margin-bottom: 20px; /* Add some space below the headline */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
@@ -1000,7 +1069,7 @@ h5::after {
   border-radius: 10px; /* Add border radius for rounded corners */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
   border: 4px solid; /* Specify border width and style */
-  border-image: linear-gradient(to right, #ffd700, #808080, #000000); /* Specify border image as gradient */
+  border-image: linear-gradient(to right, #ffd700, #808080, #ffd700); /* Specify border image as gradient */
   border-image-slice: 1; /* Make the entire border image visible */
 
         
