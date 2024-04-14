@@ -38,6 +38,12 @@ body {
 }
 
 
+h5 {
+    color:#000000;
+    font-weight: lighter;
+}
+
+
 .content {
     flex: 1;
     padding-left: 15px;
@@ -93,6 +99,13 @@ body {
 .subheadline, .course-info h2{
     color: #000; /* Black text color */
     font-weight: bold;
+}
+
+
+.need-a-hand {
+    background: linear-gradient(to right, #ffd700, #808080, #ffd700);
+    border-radius: 7px;
+    
 }
 
 
@@ -191,7 +204,7 @@ body {
 
 
 .video-text {
-    background: linear-gradient(to right, #ffd700, #808080, #ffd700);;
+    background: linear-gradient(to right, #ffd700, #808080, #ffd700);
 }
 
 
@@ -847,7 +860,7 @@ h5::after {
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff; /* White background */
+    background-color: none; /* White background */
     padding: 20px;
     border-radius: 50px;
     border: 5px solid gold;
@@ -1153,8 +1166,20 @@ h5::after {
     border-radius: 5px; /* Optional: Add border radius for rounded corners */
 }
 
-.line {
+
+
+
+
+
+  
+  
+  .line {
     width: 100%;
     height: 5px; /* Adjust the height of the line */
     background: linear-gradient(to right, #ffd700, #808080, #ffd700); /* Adjust the colors */
   }
+  
+
+
+
+
