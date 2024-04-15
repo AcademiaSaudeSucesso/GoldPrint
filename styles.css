@@ -14,6 +14,24 @@ body {
 
 
 
+.submit-button {
+    background: linear-gradient(to right, #ffd700, #808080, #ffd700);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ffd700; /* Change background color on hover */
+    transform: scale(1.1); /* Scale the button slightly on hover */
+}
+
+
+
+
 
 
 .container {
@@ -72,7 +90,7 @@ h5 {
     padding: 10px; /* Add padding to create space between text and border */
     border-radius: 10px; /* Add rounded corners for a softer appearance */
     display: inline-block; /* Ensure the border wraps around the text */
-    animation: flashBorder 2s infinite alternate; /* Apply the animation */  
+    animation: flashBorder 8s infinite alternate; /* Apply the animation */  
 }
 
 @keyframes flashBorder {
@@ -206,6 +224,51 @@ h5 {
 .video-text {
     background: linear-gradient(to right, #ffd700, #808080, #ffd700);
 }
+
+
+
+.popup-submit-button {
+    padding: 8px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    background: linear-gradient(to right, gold, black, gold); /* Apply linear gradient background */
+    color: #fff; /* Set text color to white */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    animation: pulseButton 2s infinite; /* Apply animation */
+    transition: transform 0.3s, background 0.3s; /* Add transition for smooth hover effect */
+    
+}
+
+/* Keyframes for the button pulsating animation */
+@keyframes pulseButton {
+    0% {
+        transform: scale(1); /* Start with normal size */
+    }
+    50% {
+        transform: scale(1.05); /* Increase size midway */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+    }
+}
+
+.popup-submit-button:hover {
+    background: linear-gradient(to right, gold, black, gold); /* Apply linear gradient background on hover */
+    transform: translateY(-5px); /* Move button 3 pixels up */
+}
+
+
+
+.popup-registration-form label {
+    background-image: linear-gradient(to right, gold, gold, grey); /* Apply linear gradient background */
+    color: gold; /* Hide text color */
+    border-radius: 5px;
+    display: inline-block; /* Ensure the label wraps around the text */
+    padding: 5px 10px; /* Add padding for spacing */
+}
+
+
 
 
 
@@ -474,7 +537,7 @@ h5::after {
       }
       
       .subtext {
-        animation: blink 4s infinite; /* Adjust animation duration and iteration count as needed */
+        animation: blink 8s infinite; /* Adjust animation duration and iteration count as needed */
       }
 
     
@@ -734,6 +797,9 @@ h5::after {
     
 }
 
+
+
+
 /* Adjust styles for smaller screens */
 @media (max-width: 576px) {
     .social-icon {
@@ -763,7 +829,7 @@ h5::after {
   }
   
   .subtext {
-    animation: blink 6s infinite; /* Adjust animation duration and iteration count as needed */
+    animation: blink 8s infinite; /* Adjust animation duration and iteration count as needed */
   }
   
 
@@ -827,13 +893,11 @@ h5::after {
 
 
 .gold-background {
-    background-color: gold; /* Set gold background color */
+    background-image: linear-gradient(to right, gold, grey, gold); /* Set linear gradient background */
     padding: 0; /* Add some padding for better appearance */
-    border-radius: 60px;
-    border: 3px solid black;
-    
-    
+    border-radius: 9px; /* Add border radius */
 }
+
 
 
 
@@ -958,6 +1022,10 @@ h5::after {
         left: 500px;
         top: 200px;
     }
+
+    .picture-text {
+        margin-left: -6px;
+    }
     
 
     .video-popup-content {
@@ -1025,14 +1093,7 @@ h5::after {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     }
 
-    .gold-background {
-        background-color: gold; /* Set gold background color */
-        padding: -10px; /* Add some padding for better appearance */
-        border-radius: 60px;
-        border: 2px solid black;
-        
-        
-    }
+    
 
     
     .close-popup {
@@ -1111,6 +1172,7 @@ h5::after {
 
   #country-code {
     width: 95%;
+    
   }
 
 
@@ -1125,11 +1187,22 @@ h5::after {
     border: 1px solid #ccc; /* Adiciona uma borda ao redor do menu suspenso */
     border-radius: 9px; /* Adiciona cantos arredondados */
     font-size: 16px; /* Define o tamanho da fonte */
+    
 }
+
+
 
 .dropdown select:focus {
     outline: none; /* Remove o contorno azul padrão quando o menu suspenso é selecionado */
+    
 }
+
+/* Style for the selected option */
+.dropdown select option:checked {
+    color: black !important; /* Change the color of the text when an option is selected */
+    background-color: gold !important; /* Change the background color of the selected option */
+}
+
 
 .registration-form input[type="text"],
 .registration-form button {
@@ -1181,5 +1254,4 @@ h5::after {
   
 
 
-
-
+  
