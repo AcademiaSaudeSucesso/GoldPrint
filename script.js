@@ -105,6 +105,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
+
+
+
+
+
+
 // Get the country code select element
 var countryCodeSelect = document.getElementById('country-code');
 
@@ -118,4 +127,23 @@ countryCodeSelect.addEventListener('change', function() {
     
     // Set the phone number input placeholder to include the selected country code
     phoneNumberInput.placeholder = "Digite o seu whatsapp (ex: " + selectedCountryCode + " XXXXXXXXX)";
+});
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the video pop-up element
+    var videoPopup = document.getElementById("videoPopup");
+
+    // Function to hide the video popup
+    function hideVideoPopup() {
+        videoPopup.style.display = "none";
+    }
+
+    // Add an event listener for the scroll event
+    window.addEventListener("scroll", hideVideoPopup);
 });
