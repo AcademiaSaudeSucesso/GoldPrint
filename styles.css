@@ -90,7 +90,7 @@ h5 {
     padding: 10px; /* Add padding to create space between text and border */
     border-radius: 10px; /* Add rounded corners for a softer appearance */
     display: inline-block; /* Ensure the border wraps around the text */
-    animation: flashBorder 8s infinite alternate; /* Apply the animation */  
+    animation: flashBorder 1s infinite alternate; /* Apply the animation */  
 }
 
 @keyframes flashBorder {
@@ -297,13 +297,331 @@ h5 {
     .content {
         max-width: 100%;
         padding: 80px;
+        
     }
 
     .subtext {
-        margin-left: 300px;
+        margin-right: 190px;
+    }
+
+    .logo-mobile {
+        position:relative;
+        width: 350px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        padding-top: 20px;
+        left: -80px;
+    }
+
+    .picture {
+        padding-right: 240px;
+        
+    }
+}
+
+@media (min-width: 1280px) {
+    .logo-mobile {
+        position:relative;
+        width: 450px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        padding-top: 20px;
+        left: 10px;
+        
+    }
+
+    .picture {
+        padding-right: 24px;
+        
+    }
+}
+
+@media (min-width: 853px ) and (max-width: 900px) {
+    .logo-mobile {
+        position: relative;
+        width: 390px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        padding-top: 20px;
+        left: -132px; 
+    }
+    
+
+    .subtext {
+        margin-right: 0;
+    }
+
+    .picture {
+        padding-right: 250px; 
+        
+    }
+}
+
+
+
+@media (min-width: 254px) and (max-width: 466px) {
+    .picture {
+        padding-right: 59px;
+        
+    }
+}
+
+@media (min-width: 412px) and (max-width: 415px) {
+    .picture {
+        padding-left: 70px;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 544px) {
+    .logo-mobile {
+        padding-left: 35px;
+    }
+}
+
+@media (min-width: 912px) and (max-width: 915px) {
+    .logo-mobile {
+        padding-right: -10%;
+        
+    }
+    .subtext {
+        margin-left: 170px;
+    }
+    .picture {
+        padding-left: -30px;
+        
+    }
+}
+
+@media (min-width: 820px) and (max-width: 825px) {
+    .logo-mobile {
+        padding-right: 50px;
+        left: -120px;
+    }
+    .subtext {
+        margin-left: 60px;
+        width: 502px;
+    }
+    .picture {
+        padding-bottom: 100px;
+        padding-right: 300px;
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width:774px) {
+    .logo-mobile {
+        margin-left: 110px;
+    }
+    .picture-container{
+        margin-right: 120px;
+    }
+    .picture{
+        padding-left: 100px;
+    }
+    .contact-info{
+        left: -10px;
+    }
+    
+}
+
+@media (min-width: 430px) and (max-width:434px) {
+    .picture {
+        padding: 25px;
+        
+    }
+}
+
+@media (min-width: 390px) and (max-width:394px) {
+    .picture {
+        padding-right: 1px;
+        
+    }
+}
+
+@media (min-width: 375px) and (max-width:379px) {
+    .picture {
+        padding-right: 0px;
+        
+    }
+}
+
+
+@media (min-width:1976px) and (max-width:2030px) {
+    .picture-container {
+        padding: -50px;
+        width: 900px;
+    }
+    .picture {
+        width: 900px;
+    }
+    .logo-mobile {
+        left: 30px;
+    }
+
+    .contact-info {
+        top: -400px;
+    }
+
+    .picture-text {
+        height: -10px;
+    }
+    .video-text {
+        text-align: center;
+        color: #000;
     }
 
 }
+
+@media (min-width: 1920px) and (max-width: 2000px) {
+    .logo-mobile {
+        left: 80px;
+    }
+    .testimonial-text{
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        margin-left: -180px;
+    }
+}
+
+
+@media (min-width:2000px) and (max-width:3500px) {
+    .logo-mobile {
+        width: 1500px;
+        left: -150px;
+    }
+    .headline {
+        width: 2000px;
+        margin-top: 20px;
+        margin-left: -450px;
+        font-size: 60px;
+    }
+    .subtext {
+        width: 800px;
+        margin-top: 50px;
+        height: 90px;
+        font-size: 50px; 
+    }
+    .registration-form {
+        width: 3000px;
+        margin-top: 20px;
+        margin-right: 350px;
+    }
+    .marquee-text {
+        width: 1800px;
+        font-size: 500px;
+    }
+    .video-container {
+        width: 2000px;
+        margin-left: -200px;
+    }
+    .testimonial-text {
+        font-weight: bold;
+        color: #000;
+        font-size: 30px;
+        text-align: center;
+        background-color: gold;
+        border-radius: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .video-text {
+        text-align: center;
+        color: #000;
+        font-size: 30px;
+        border-radius: 50px;
+        margin-bottom: 50px;
+    }
+    .picture {
+        width: 1400px; 
+    }
+    .contact-info {
+        bottom: 350px;
+        font-size: 40px;
+    }
+    .picture-text {
+        margin-top: -90px;
+        font-size: 25px;
+    }
+    .popup-video {
+        width: 5000px;
+        height: 5000px;
+        margin-top: 200px;
+    }
+
+
+    
+    
+
+
+    
+}
+
+@media (min-width:1381px) and (max-width:1600px) {
+    .logo-mobile {
+        width: 1200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1400px) and (max-width: 1980px) {
+    .picture {
+        max-width: 1976px;
+    }
+    .container {
+        max-width:fit-content;
+        max-height:fit-content;
+        margin: 0 auto;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .logo-mobile {
+        margin-left: -100px;
+        width: 1000px;
+        margin-top: -100px;
+    }
+
+    .headline {
+        margin-left: -350px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .line{
+        margin-left: -160px;
+    }
+    .registration-form {
+        margin-left: 260px;
+    }
+    .marquee-container{
+        margin-left: -200px;
+    }
+    .subtext{
+        margin-left: -600px;
+        width: 602px;
+        margin-right: 500px; 
+}
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -480,9 +798,9 @@ h5::after {
 
     
     
-
-    
 }
+
+
 
 
 
@@ -993,8 +1311,6 @@ h5::after {
     height: 370px;
     width: 100%; /* Set the video width to 100% for smaller screens */
     height: 61%; /* Ensure the video maintains its aspect ratio */
-    
-    
     
 }
 
