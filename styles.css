@@ -628,6 +628,8 @@ h5 {
 
 
 
+
+
 @media (max-width: 767px) {
     .headline {
         margin-top: -30px; /* Add margin to create space between the logo and the headline */
@@ -1570,4 +1572,40 @@ h5::after {
   
 
 
-  
+  @media (min-width: 1920px) and (max-width: 2000px) {
+    .picture {
+        width: 800px;
+    }
+    .picture-text {
+        width: 700px;
+        font-size: 20px;
+        
+    }
+    .contact-info {
+        bottom: 530px;
+        font-size: 20px;
+    }
+    .video-text {
+        text-align: center;
+        color: #000;
+        font-size: 20px;
+        
+    }
+    .close-popup {
+        display:none;
+        background-image: none;
+    }
+    .video-popup {
+        display: none;
+        width: 2000px;
+        height: 800px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .popup-video {
+        background: none;
+        width: 1800px;
+        height: 500px;
+    }
+}
